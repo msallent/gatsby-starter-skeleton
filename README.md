@@ -1,22 +1,24 @@
 ## :zap: Features
 
-**Packages**:
-  - EditorConfig
-  - ESLint
-  - Prettier
-  - stylelint
-  - styled-components
-  - TypeScript
+**dependencies**:
+
+    ├── babel-plugin-styled-components
+    ├── gatsby-image
+    ├── gatsby-plugin-react-helmet
+    ├── gatsby-plugin-react-svg
+    ├── gatsby-plugin-sharp
+    ├── gatsby-plugin-styled-components
+    ├── gatsby-plugin-typescript
+    ├── gatsby-source-filesystem
+    ├── gatsby-transformer-sharp
+    └── styled-components
     
-**Gatsby Plugins**:
-  - gatsby-image
-  - gatsby-plugin-react-helmet
-  - gatsby-plugin-react-svg
-  - gatsby-plugin-sharp
-  - gatsby-plugin-styled-components
-  - gatsby-plugin-typescript
-  - gatsby-source-filesystem
-  - gatsby-transformer-sharp
+**devDependencies**:
+
+    ├── eslint
+    ├── prettier
+    ├── stylelint
+    └── typescript
 
 ## 🚀 Quick start
 
