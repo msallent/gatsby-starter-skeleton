@@ -12,7 +12,7 @@
     ├── gatsby-source-filesystem
     ├── gatsby-transformer-sharp
     └── styled-components
-    
+
 **devDependencies**:
 
     ├── eslint
@@ -62,16 +62,15 @@ A quick look at the top-level files and directories you'll see in this Gatsby st
     ├── .prettierignore
     ├── .prettierrc
     ├── .stylelintrc
-    ├── .yarnclean
     ├── gatsby-browser.js
     ├── gatsby-config.js
     ├── gatsby-node.js
     ├── gatsby-ssr.js
     ├── LICENSE
+    ├── package-lock.json
     ├── package.json
     ├── README.md
-    ├── tsconfig.json
-    └── yarn.lock
+    └── tsconfig.json
 
 1.  **`/.vscode`**: This directory contains settings and extensions for [Visual Studio Code](https://code.visualstudio.com/).
 
@@ -81,7 +80,7 @@ A quick look at the top-level files and directories you'll see in this Gatsby st
 
 4.  **`.editorconfig`**: This is a configuration file for [EditorConfig](https://editorconfig.org/). EditorConfig helps maintain consistent coding styles for multiple developers working on the same project across various editors and IDEs.
 
-5.  **`.eslintignore`**: This is a configuration file for [ESLint](https://eslint.org/). Directories and files specified here will be ignored by ESLint. 
+5.  **`.eslintignore`**: This is a configuration file for [ESLint](https://eslint.org/). Directories and files specified here will be ignored by ESLint.
 
 6.  **`.eslintrc.js`**: This is a configuration file for [ESLint](https://eslint.org/). ESLint is a tool to help make code more consistent and avoid bugs.
 
@@ -93,22 +92,20 @@ A quick look at the top-level files and directories you'll see in this Gatsby st
 
 10. **`.stylelintrc`**: This is a configuration file for [stylelint](https://stylelint.io/). stylelint is a tool that helps you avoid errors and enforce conventions in your styles.
 
-11. **`.yarnclean`**: Directores specified here will be delete from the `node_modules` folder.
+11. **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.org/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
 
-12. **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.org/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
+12. **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.org/docs/gatsby-config/) for more detail).
 
-13. **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.org/docs/gatsby-config/) for more detail).
+13. **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.org/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
 
-14. **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.org/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
+14. **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.org/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
 
-15. **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.org/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
+15. **`LICENSE`**: Gatsby is licensed under the MIT license.
 
-16. **`LICENSE`**: Gatsby is licensed under the MIT license.
+16. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
 
 17. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
 
 18. **`README.md`**: A text file containing useful reference information about your project.
 
 19. **`tsconfig.json`**: The presence of this file indicates that the directory is the root of a TypeScript project. Compilation options and root files are specified here.
-
-20. **`yarn.lock`**: This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
