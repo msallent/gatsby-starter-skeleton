@@ -1,8 +1,8 @@
 {
   "name": "gatsby-skeleton",
   "private": true,
-  "description": "Gatsby starter with TypeScript and all sort of linting",
-  "version": "1.0.0",
+  "description": "Gatsby starter with all sort of linting",
+  "version": "1.1.0",
   "license": "MIT",
   "author": {
     "name": "Matias Sallent",
@@ -15,8 +15,7 @@
     "lint:fix": "npm run lint --fix",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \"",
-    "type-check": "tsc"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
   },
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.6",
