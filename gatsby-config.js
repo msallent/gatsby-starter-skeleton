@@ -23,7 +23,6 @@ module.exports = {
     'gatsby-plugin-react-svg',
     'gatsby-plugin-sharp',
     'gatsby-plugin-styled-components',
-    'gatsby-plugin-typescript',
     'gatsby-transformer-sharp',
   ],
 };
