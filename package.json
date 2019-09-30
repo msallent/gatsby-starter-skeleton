@@ -1,8 +1,8 @@
 {
   "name": "gatsby-skeleton",
   "private": true,
-  "description": "Gatsby starter with TypeScript and all sort of linting",
-  "version": "1.0.0",
+  "description": "Gatsby starter with all sort of linting",
+  "version": "1.1.0",
   "license": "MIT",
   "author": {
     "name": "Matias Sallent",
@@ -15,8 +15,7 @@
     "lint:fix": "npm run lint --fix",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \"",
-    "type-check": "tsc"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
   },
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.6",
@@ -26,7 +25,6 @@
     "gatsby-plugin-react-svg": "^2.1.2",
     "gatsby-plugin-sharp": "^2.2.24",
     "gatsby-plugin-styled-components": "^3.1.5",
-    "gatsby-plugin-typescript": "^2.1.8",
     "gatsby-source-filesystem": "^2.1.24",
     "gatsby-transformer-sharp": "^2.2.15",
     "react": "^16.9.0",
@@ -35,13 +33,6 @@
     "styled-components": "^4.3.2"
   },
   "devDependencies": {
-    "@types/node": "^12.7.5",
-    "@types/react": "^16.9.2",
-    "@types/react-dom": "^16.9.0",
-    "@types/react-helmet": "^5.0.10",
-    "@types/styled-components": "^4.1.19",
-    "@typescript-eslint/eslint-plugin": "^2.3.0",
-    "@typescript-eslint/parser": "^2.3.0",
     "eslint": "^6.4.0",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-prettier": "^6.3.0",
@@ -54,8 +45,7 @@
     "stylelint": "^10.1.0",
     "stylelint-config-recommended": "^2.2.0",
     "stylelint-config-styled-components": "^0.1.1",
-    "stylelint-processor-styled-components": "^1.8.0",
-    "typescript": "^3.6.3"
+    "stylelint-processor-styled-components": "^1.8.0"
   },
   "repository": {
     "type": "git",
