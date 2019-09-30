@@ -4,18 +4,8 @@ import { useStaticQuery, graphql } from 'gatsby';
 
 import Favicon from '../../assets/favicon.ico';
 
-interface HelmetData {
-  site: {
-    siteMetadata: {
-      title: string;
-      description: string;
-      keywords: string;
-    };
-  };
-}
-
-const SEO = (): React.ReactElement => {
-  const { site }: HelmetData = useStaticQuery(
+const SEO = () => {
+  const { site } = useStaticQuery(
     graphql`
       query {
         site {
