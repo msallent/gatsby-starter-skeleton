@@ -1,11 +1,13 @@
 module.exports = {
   root: true,
-  extends: ['airbnb', 'plugin:prettier/recommended'],
+  extends: ['airbnb', 'prettier'],
+  plugins: ['prettier'],
   env: {
     browser: true,
     es6: true,
   },
   rules: {
     'no-console': 'warn',
+    'prettier/prettier': 'error',
   },
 };
