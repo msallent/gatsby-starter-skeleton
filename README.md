@@ -8,7 +8,6 @@
     ├── gatsby-plugin-react-svg
     ├── gatsby-plugin-sharp
     ├── gatsby-plugin-styled-components
-    ├── gatsby-plugin-typescript
     ├── gatsby-source-filesystem
     ├── gatsby-transformer-sharp
     └── styled-components
@@ -17,8 +16,7 @@
 
     ├── eslint
     ├── prettier
-    ├── stylelint
-    └── typescript
+    └── stylelint
 
 ## 🚀 Quick start
 
@@ -69,8 +67,7 @@ A quick look at the top-level files and directories you'll see in this Gatsby st
     ├── LICENSE
     ├── package-lock.json
     ├── package.json
-    ├── README.md
-    └── tsconfig.json
+    └── README.md
 
 1.  **`/.vscode`**: This directory contains settings and extensions for [Visual Studio Code](https://code.visualstudio.com/).
 
@@ -107,5 +104,3 @@ A quick look at the top-level files and directories you'll see in this Gatsby st
 17. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
 
 18. **`README.md`**: A text file containing useful reference information about your project.
-
-19. **`tsconfig.json`**: The presence of this file indicates that the directory is the root of a TypeScript project. Compilation options and root files are specified here.
