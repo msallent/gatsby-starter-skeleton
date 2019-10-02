@@ -28,8 +28,8 @@
     }
   },
   "lint-staged": {
-    "*.{js,jsx}": ["npm run fix:js", "git add"],
-    "*.{json,md}": ["prettier --write", "git add"]
+    "*.{js,jsx}": ["npm run fix:js", "npm run lint:style", "git add"],
+    "*.{json,md}": ["npm run fix:prettier", "git add"]
   },
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.6",
