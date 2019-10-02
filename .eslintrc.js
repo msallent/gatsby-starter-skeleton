@@ -7,6 +7,7 @@ module.exports = {
     es6: true,
   },
   rules: {
+    'import/no-extraneous-dependencies': 'off',
     'no-console': 'warn',
     'prettier/prettier': 'error',
   },
