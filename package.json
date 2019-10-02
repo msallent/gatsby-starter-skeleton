@@ -11,11 +11,25 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "lint": "eslint --ignore-path .gitignore . --ext ts --ext tsx --ext js --ext jsx",
-    "lint:fix": "npm run lint --fix",
+    "lint": "npm run lint:js && npm run lint:style && npm run lint:prettier",
+    "lint:js": "eslint --ignore-path .gitignore . --ext js --ext jsx",
+    "lint:style": "stylelint 'src/**/*.{js,jsx}'",
+    "lint:prettier": "prettier '*.{json,md}' --list-different",
+    "fix": "npm run fix:js && npm run fix:prettier",
+    "fix:js": "eslint --ignore-path .gitignore . --ext js --ext jsx --fix",
+    "fix:prettier": "prettier '*.{json,md}' --write",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx}": ["npm run fix:js", "git add"],
+    "*.{json,md}": ["prettier --write", "git add"]
   },
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.6",
@@ -41,6 +55,8 @@
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-react": "^7.14.3",
     "eslint-plugin-react-hooks": "^2.0.1",
+    "husky": "^3.0.7",
+    "lint-staged": "^9.4.0",
     "prettier": "^1.18.2",
     "stylelint": "^10.1.0",
     "stylelint-config-recommended": "^2.2.0",
