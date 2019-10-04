@@ -7,8 +7,9 @@
 module.exports = {
   siteMetadata: {
     title: 'gatsby-skeleton',
-    description: 'Gatsby starter with TypeScript and all sort of linting',
-    keywords: 'gatsby, starter, typescript, eslint, prettier, stylelint, styled, components',
+    description: 'Gatsby starter with all sort of linting',
+    keywords:
+      'gatsby, starter, eslint, prettier, stylelint, lint-staged, husky, styled, components',
   },
   plugins: [
     {
