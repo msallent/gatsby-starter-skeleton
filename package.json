@@ -14,22 +14,13 @@
     "lint": "npm run lint:js && npm run lint:style && npm run lint:prettier",
     "lint:js": "eslint --ignore-path .gitignore . --ext js --ext jsx",
     "lint:style": "stylelint 'src/**/*.{js,jsx}'",
-    "lint:prettier": "prettier '*.{json,md}' --list-different",
+    "lint:prettier": "prettier 'src/**/*.{json,md}' --list-different",
     "fix": "npm run fix:js && npm run fix:prettier",
     "fix:js": "eslint --ignore-path .gitignore . --ext js --ext jsx --fix",
-    "fix:prettier": "prettier '*.{json,md}' --write",
+    "fix:prettier": "prettier 'src/**/*.{json,md}' --write",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.{js,jsx}": ["npm run fix:js", "npm run lint:style", "git add"],
-    "*.{json,md}": ["npm run fix:prettier", "git add"]
   },
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.6",
@@ -69,5 +60,21 @@
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "eslint --fix",
+      "stylelint",
+      "git add"
+    ],
+    "*.{json,md}": [
+      "prettier --write",
+      "git add"
+    ]
   }
 }
