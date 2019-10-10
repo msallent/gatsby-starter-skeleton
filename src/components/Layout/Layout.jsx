@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import GlobalStyle from './styles';
-import SEO from '../SEO/SEO';
+import SEO from '../SEO';
+
+import GlobalStyle from '../../utils/globalStyle';
 
 const Layout = ({ children }) => (
   <>
