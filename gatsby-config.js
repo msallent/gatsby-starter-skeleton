@@ -12,7 +12,7 @@ module.exports = {
       'gatsby, starter, eslint, prettier, stylelint, lint-staged, husky, styled, components',
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-react-helmet-async',
     'gatsby-plugin-react-svg',
     'gatsby-plugin-sharp',
     'gatsby-plugin-styled-components',
