@@ -28,7 +28,6 @@ const GlobalStyle = createGlobalStyle`
   #___gatsby,
   #gatsby-focus-wrapper {
     height: 100%;
-    overflow: auto;
   }
 
   h1,
