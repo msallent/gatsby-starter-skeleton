@@ -6,7 +6,7 @@
 
 module.exports = {
   siteMetadata: {
-    title: 'gatsby-skeleton',
+    title: 'Gatsby Skeleton',
     description: 'Gatsby starter with all sort of linting',
     keywords:
       'gatsby, starter, eslint, prettier, stylelint, lint-staged, husky, styled, components',
