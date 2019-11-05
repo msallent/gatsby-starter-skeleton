@@ -5,7 +5,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 
 import Favicon from '../../assets/favicon.ico';
 
-const SEO = ({ title }) => {
+const SEO = ({ title, description, lang, pathname, image }) => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -14,39 +14,62 @@ const SEO = ({ title }) => {
             title
             description
             keywords
+            url
+            image
           }
         }
       }
     `
   );
 
+  const defaultImage = `${site.siteMetadata.url}${site.siteMetadata.image}`;
+  const metaImage = image && image.src ? `${site.siteMetadata.url}${image.src}` : defaultImage;
+  const metaImageAlt = image && image.alt ? image.alt : title;
+  const metaDescription = description || site.siteMetadata.description;
+  const metaURL = `${site.siteMetadata.url}${pathname}`;
+
   return (
     <Helmet
       title={title}
       titleTemplate={`${site.siteMetadata.title} - %s`}
-      defaultTitle={site.siteMetadata.title}
-      htmlAttributes={{ lang: 'es' }}
+      htmlAttributes={{ lang }}
       link={[{ rel: 'shortcut icon', type: 'image/ico', href: Favicon }]}
       meta={[
         {
           name: 'description',
-          content: site.siteMetadata.description,
+          content: metaDescription,
+        },
+        {
+          property: 'keywords',
+          content: site.siteMetadata.keywords,
         },
         {
           property: 'og:title',
-          content: site.siteMetadata.title,
+          content: title,
+        },
+        {
+          property: 'og:url',
+          content: metaURL,
         },
         {
           property: 'og:description',
-          content: site.siteMetadata.description,
+          content: metaDescription,
         },
         {
           property: 'og:type',
           content: 'website',
         },
         {
-          property: 'keywords',
-          content: site.siteMetadata.keywords,
+          property: 'og:image',
+          content: metaImage,
+        },
+        {
+          property: 'og:image:alt',
+          content: metaImageAlt,
+        },
+        {
+          name: 'twitter:card',
+          content: 'summary_large_image',
         },
       ]}
     />
@@ -54,11 +77,16 @@ const SEO = ({ title }) => {
 };
 
 SEO.propTypes = {
-  title: PropTypes.string,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string,
+  lang: PropTypes.string.isRequired,
+  pathname: PropTypes.string.isRequired,
+  image: PropTypes.shape(PropTypes.string, PropTypes.string),
 };
 
 SEO.defaultProps = {
-  title: '',
+  description: null,
+  image: null,
 };
 
 export default SEO;
