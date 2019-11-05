@@ -81,7 +81,10 @@ SEO.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string.isRequired,
   pathname: PropTypes.string.isRequired,
-  image: PropTypes.shape(PropTypes.string, PropTypes.string),
+  image: PropTypes.shape({
+    src: PropTypes.string.isRequired,
+    alt: PropTypes.string,
+  }),
 };
 
 SEO.defaultProps = {

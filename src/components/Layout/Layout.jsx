@@ -30,7 +30,10 @@ Layout.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string,
   lang: PropTypes.string,
-  image: PropTypes.shape(PropTypes.string, PropTypes.string),
+  image: PropTypes.shape({
+    src: PropTypes.string.isRequired,
+    alt: PropTypes.string,
+  }),
 };
 
 Layout.defaultProps = {
