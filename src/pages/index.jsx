@@ -4,7 +4,7 @@ import Layout from '../components/Layout';
 
 const Index = () => (
   <Layout title="Home">
-    <div>Hello world.</div>
+    <div>Hello world!</div>
   </Layout>
 );
 
