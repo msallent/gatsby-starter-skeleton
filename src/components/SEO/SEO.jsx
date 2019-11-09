@@ -14,19 +14,19 @@ const SEO = ({ title, description, lang, pathname, image }) => {
             title
             description
             keywords
-            url
             image
+            siteUrl
           }
         }
       }
     `
   );
 
-  const defaultImage = `${site.siteMetadata.url}${site.siteMetadata.image}`;
-  const metaImage = image && image.src ? `${site.siteMetadata.url}${image.src}` : defaultImage;
+  const defaultImage = `${site.siteMetadata.siteUrl}${site.siteMetadata.image}`;
+  const metaImage = image && image.src ? `${site.siteMetadata.siteUrl}${image.src}` : defaultImage;
   const metaImageAlt = image && image.alt ? image.alt : title;
   const metaDescription = description || site.siteMetadata.description;
-  const metaURL = `${site.siteMetadata.url}${pathname}`;
+  const metaURL = `${site.siteMetadata.siteUrl}${pathname}`;
 
   return (
     <Helmet

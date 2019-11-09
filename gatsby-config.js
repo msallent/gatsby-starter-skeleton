@@ -10,8 +10,8 @@ module.exports = {
     description: 'Gatsby starter with SEO and all sort of linting',
     keywords:
       'gatsby, starter, eslint, prettier, stylelint, lint-staged, husky, styled, components, seo',
-    url: 'https://gatsby-skeleton.netlify.com',
     image: '/images/social.jpg',
+    siteUrl: 'https://gatsby-skeleton.netlify.com',
   },
   plugins: [
     'gatsby-plugin-react-helmet-async',
