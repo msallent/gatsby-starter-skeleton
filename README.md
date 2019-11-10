@@ -1,12 +1,34 @@
+<p align="center">
+  <a href="https://gatsbyjs.org">
+    <img alt="Gatsby" src="https://www.gatsbyjs.org/Gatsby-Logo.svg" width="350" />
+  </a>
+</p>
+
+<br />
+
+Gatsby Skeleton is a Gatsby starter that comes with improved SEO and all sort of linting.
+
+- **Search Engine Optimization (SEO).** With a fully customizable SEO component that gets added 
+  to every page in your website, you'll be able to set different metadata tags to all of your
+  pages, no matter where they come from. Other improvements include automatic generation of sitemap 
+  and social (Facebook/Twitter) sharing cards.
+
+- **Linters and Hooks.** With the help of tools like [ESLint](https://eslint.org/),
+  [Prettier](https://prettier.io/) and [stylelint](https://stylelint.io/) you'll only have to worry 
+  about writing code, everything else will be automatically done for you! Combining this with pre-commit
+  hooks guarantees that not only your local files but everything you or anyone pushes to your repo will
+  go through quality checks first.
+
 ## :zap: Features
 
 **dependencies**:
 
     ├── babel-plugin-styled-components
     ├── gatsby-image
-    ├── gatsby-plugin-react-helmet
+    ├── gatsby-plugin-react-helmet-async
     ├── gatsby-plugin-react-svg
     ├── gatsby-plugin-sharp
+    ├── gatsby-plugin-sitemap
     ├── gatsby-plugin-styled-components
     ├── gatsby-source-filesystem
     ├── gatsby-transformer-sharp
@@ -15,6 +37,8 @@
 **devDependencies**:
 
     ├── eslint
+    ├── husky
+    ├── lint-staged
     ├── prettier
     └── stylelint
 
@@ -69,7 +93,7 @@ A quick look at the top-level files and directories you'll see in this Gatsby st
     ├── package.json
     └── README.md
 
-1.  **`/.vscode`**: This directory contains settings and extensions for [Visual Studio Code](https://code.visualstudio.com/).
+1.  **`/.vscode`**: This directory contains extensions recommendations for [Visual Studio Code](https://code.visualstudio.com/).
 
 2.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
 
