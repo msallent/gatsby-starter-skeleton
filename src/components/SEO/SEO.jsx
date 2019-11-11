@@ -33,7 +33,7 @@ const SEO = ({ title, description, lang, pathname, image }) => {
       title={title}
       titleTemplate={`${site.siteMetadata.title} - %s`}
       htmlAttributes={{ lang }}
-      link={[{ rel: 'shortcut icon', type: 'image/ico', href: Favicon }]}
+      link={[{ rel: 'icon', type: 'image/ico', href: Favicon }]}
       meta={[
         {
           name: 'description',
