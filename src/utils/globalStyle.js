@@ -21,13 +21,13 @@ const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
-    height: 100%;
+    min-height: 100%;
     font-size: 1.6rem;
   }
 
   #___gatsby,
   #gatsby-focus-wrapper {
-    height: 100%;
+    min-height: 100%;
   }
 
   h1,
