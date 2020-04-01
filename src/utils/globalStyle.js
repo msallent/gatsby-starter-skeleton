@@ -12,7 +12,6 @@ const GlobalStyle = createGlobalStyle`
   }
 
   html {
-    height: 100%;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -webkit-tap-highlight-color: transparent;
@@ -21,13 +20,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
-    min-height: 100%;
     font-size: 1.6rem;
-  }
-
-  #___gatsby,
-  #gatsby-focus-wrapper {
-    min-height: 100%;
   }
 
   h1,
