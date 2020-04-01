@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
-const GlobalStyle = createGlobalStyle`
+export const GlobalStyle = createGlobalStyle`
   :root {
     font-size: 62.5%;
   }
@@ -12,6 +12,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   html {
+    scroll-behavior: smooth;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -webkit-tap-highlight-color: transparent;
@@ -101,5 +102,3 @@ const GlobalStyle = createGlobalStyle`
     }
   }
 `;
-
-export default GlobalStyle;
