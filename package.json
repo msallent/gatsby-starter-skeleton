@@ -1,24 +1,18 @@
 {
-  "name": "gatsby-skeleton",
   "private": true,
-  "description": "Gatsby starter with SEO and all sort of linting",
+  "name": "gatsby-starter-skeleton",
   "version": "1.2.0",
   "license": "MIT",
-  "author": {
-    "name": "Matias Sallent",
-    "url": "https://github.com/msallent"
-  },
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
-    "lint": "npm run lint:js && npm run lint:style && npm run lint:prettier",
+    "dev": "gatsby develop",
+    "lint": "yarn lint:js && yarn lint:style && yarn lint:prettier",
     "lint:js": "eslint --ignore-path .gitignore . --ext js --ext jsx",
     "lint:style": "stylelint 'src/**/*.{js,jsx}'",
     "lint:prettier": "prettier 'src/**/*.{json,md}' --list-different",
-    "fix": "npm run fix:js && npm run fix:prettier",
+    "fix": "yarn fix:js && yarn fix:prettier",
     "fix:js": "eslint --ignore-path .gitignore . --ext js --ext jsx --fix",
     "fix:prettier": "prettier 'src/**/*.{json,md}' --write",
-    "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
   },
@@ -55,13 +49,6 @@
     "stylelint-config-styled-components": "^0.1.1",
     "stylelint-processor-styled-components": "^1.10.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/msallent/gatsby-skeleton"
-  },
-  "bugs": {
-    "url": "https://github.com/msallent/gatsby-skeleton/issues"
-  },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
@@ -70,13 +57,9 @@
   },
   "lint-staged": {
     "src/**/*.{js,jsx}": [
-      "eslint --fix --max-warnings=0",
-      "stylelint",
-      "git add"
+      "eslint --fix",
+      "stylelint"
     ],
-    "src/**/*.{json,md}": [
-      "prettier --write",
-      "git add"
-    ]
+    "src/**/*.{json,md}": "prettier --write"
   }
 }
