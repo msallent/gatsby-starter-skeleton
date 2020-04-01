@@ -5,15 +5,9 @@
  */
 
 module.exports = {
-  siteMetadata: {
-    title: 'Gatsby Skeleton',
-    description: 'Gatsby starter with SEO and all sort of linting',
-    keywords:
-      'gatsby, starter, eslint, prettier, stylelint, lint-staged, husky, styled, components, seo',
-    image: '/images/social.jpg',
-    siteUrl: 'https://gatsby-skeleton.netlify.com',
-  },
   plugins: [
+    '@msallent/gatsby-theme-skeleton-core',
+    '@msallent/gatsby-theme-skeleton-seo',
     'gatsby-plugin-react-svg',
     'gatsby-plugin-sharp',
     'gatsby-plugin-styled-components',
