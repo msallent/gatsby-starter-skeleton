@@ -1,20 +1,21 @@
 {
   "private": true,
   "name": "gatsby-starter-skeleton",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
     "dev": "gatsby develop",
     "lint": "yarn lint:js && yarn lint:style && yarn lint:prettier",
-    "lint:js": "eslint --ignore-path .gitignore . --ext js --ext jsx",
-    "lint:style": "stylelint 'src/**/*.{js,jsx}'",
+    "lint:js": "eslint --ignore-path .gitignore . --ext ts --ext tsx --ext js --ext jsx",
+    "lint:style": "stylelint 'src/**/*.{ts,tsx,js,jsx}'",
     "lint:prettier": "prettier 'src/**/*.{json,md}' --list-different",
     "fix": "yarn fix:js && yarn fix:prettier",
-    "fix:js": "eslint --ignore-path .gitignore . --ext js --ext jsx --fix",
-    "fix:prettier": "prettier 'src/**/*.{json,md}' --write",
+    "fix:js": "yarn lint:js --fix",
+    "fix:prettier": "yarn lint:prettier --write",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \"",
+    "type-check": "tsc"
   },
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.7",
@@ -23,6 +24,7 @@
     "gatsby-plugin-react-svg": "^3.0.0",
     "gatsby-plugin-sharp": "^2.5.3",
     "gatsby-plugin-styled-components": "^3.2.1",
+    "gatsby-plugin-typescript": "^2.3.1",
     "gatsby-source-filesystem": "^2.2.2",
     "gatsby-transformer-sharp": "^2.4.3",
     "react": "^16.13.1",
@@ -30,9 +32,15 @@
     "styled-components": "^5.0.1"
   },
   "devDependencies": {
+    "@types/node": "^13.9.5",
+    "@types/react": "^16.9.27",
+    "@types/react-dom": "^16.9.5",
+    "@typescript-eslint/eslint-plugin": "^2.25.0",
+    "@typescript-eslint/parser": "^2.25.0",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.1.0",
     "eslint-config-prettier": "^6.10.1",
+    "eslint-import-resolver-typescript": "^2.0.0",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-prettier": "^3.1.2",
@@ -44,11 +52,12 @@
     "stylelint": "^13.2.1",
     "stylelint-config-recommended": "^3.0.0",
     "stylelint-config-styled-components": "^0.1.1",
-    "stylelint-processor-styled-components": "^1.10.0"
+    "stylelint-processor-styled-components": "^1.10.0",
+    "typescript": "^3.8.3"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged",
+      "pre-commit": "tsc && lint-staged",
       "post-commit": "git reset"
     }
   },

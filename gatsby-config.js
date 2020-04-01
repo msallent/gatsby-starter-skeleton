@@ -14,11 +14,10 @@ module.exports = {
     siteUrl: 'https://gatsby-skeleton.netlify.com',
   },
   plugins: [
-    'gatsby-plugin-react-helmet-async',
     'gatsby-plugin-react-svg',
-    'gatsby-plugin-sitemap',
     'gatsby-plugin-sharp',
     'gatsby-plugin-styled-components',
+    'gatsby-plugin-typescript',
     'gatsby-transformer-sharp',
     {
       resolve: 'gatsby-source-filesystem',
