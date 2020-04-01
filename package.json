@@ -35,6 +35,7 @@
     "@types/node": "^13.9.5",
     "@types/react": "^16.9.27",
     "@types/react-dom": "^16.9.5",
+    "@types/styled-components": "^5.0.1",
     "@typescript-eslint/eslint-plugin": "^2.25.0",
     "@typescript-eslint/parser": "^2.25.0",
     "eslint": "^6.8.0",
