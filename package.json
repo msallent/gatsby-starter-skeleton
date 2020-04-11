@@ -22,7 +22,7 @@
     "@msallent/gatsby-theme-skeleton-seo": "^1.0.0",
     "babel-plugin-styled-components": "^1.10.7",
     "gatsby": "^2.20.9",
-    "gatsby-image": "^2.3.1",
+    "gatsby-image": "^2.3.2",
     "gatsby-plugin-react-svg": "^3.0.0",
     "gatsby-plugin-sharp": "^2.5.4",
     "gatsby-plugin-styled-components": "^3.2.1",
