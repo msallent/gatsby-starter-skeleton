@@ -3,16 +3,23 @@ import { Layout } from '@msallent/gatsby-theme-skeleton-seo/src/components/Layou
 import { GlobalStyle } from './globalStyle';
 
 export const wrapPageElement: React.FC = ({ element, props }: any) => {
-  /* eslint-disable-next-line */
-  const displayName = props.pageResources.component.displayName
-    .split(/(?=[A-Z])/)
-    .slice(2)
-    .join(' ');
+  const { data, location } = props;
+
+  const currentNode = data && data.currentNode;
+  const pageMetadata = currentNode && {
+    title: currentNode.title,
+    description: currentNode.description,
+    keywords: currentNode.keywords,
+    language: currentNode.language,
+    imageURI: currentNode.imageURI,
+  };
 
   return (
     <>
       <GlobalStyle />
-      <Layout title={displayName}>{element}</Layout>
+      <Layout location={location} {...pageMetadata}>
+        {element}
+      </Layout>
     </>
   );
 };
