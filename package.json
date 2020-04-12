@@ -18,8 +18,8 @@
     "type-check": "tsc"
   },
   "dependencies": {
-    "@msallent/gatsby-theme-skeleton-core": "^1.0.0",
-    "@msallent/gatsby-theme-skeleton-seo": "^1.0.0",
+    "@msallent/gatsby-theme-skeleton-core": "^1.0.1",
+    "@msallent/gatsby-theme-skeleton-seo": "^1.0.1",
     "babel-plugin-styled-components": "^1.10.7",
     "gatsby": "^2.20.18",
     "gatsby-image": "^2.3.2",
