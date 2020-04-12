@@ -1,12 +1,6 @@
 module.exports = {
   root: true,
-  parser: '@typescript-eslint/parser',
-  extends: [
-    'airbnb',
-    'prettier/@typescript-eslint',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:prettier/recommended',
-  ],
+  extends: ['airbnb', 'plugin:prettier/recommended'],
   parserOptions: {
     ecmaVersion: 2017,
     sourceType: 'module',
@@ -31,4 +25,11 @@ module.exports = {
     'react/jsx-one-expression-per-line': 0,
     'react/prop-types': 0,
   },
+  overrides: [
+    {
+      files: ['**/*.ts', '**/*.tsx'],
+      parser: '@typescript-eslint/parser',
+      extends: ['prettier/@typescript-eslint', 'plugin:@typescript-eslint/recommended'],
+    },
+  ],
 };
