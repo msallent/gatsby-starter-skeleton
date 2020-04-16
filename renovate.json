@@ -1,0 +1,11 @@
+{
+  "extends": ["config:base"],
+  "timezone": "America/Buenos_Aires",
+  "schedule": "before 10am",
+  "prHourlyLimit": 0,
+  "labels": ["dependencies"],
+  "automerge": true,
+  "major": {
+    "automerge": false
+  }
+}
