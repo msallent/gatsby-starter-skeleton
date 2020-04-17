@@ -1,6 +1,7 @@
 <p align="center">
   <a href="https://gatsbyjs.org">
     <img alt="Gatsby" src="https://www.gatsbyjs.org/Gatsby-Logo.svg" width="350" />
+    <img alt="CI Status" src="https://travis-ci.com/msallent/gatsby-starter-skeleton.svg?branch=master" />
   </a>
 </p>
 
