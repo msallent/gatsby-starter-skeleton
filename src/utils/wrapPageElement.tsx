@@ -15,11 +15,9 @@ export const wrapPageElement: React.FC = ({ element, props }: any) => {
   };
 
   return (
-    <>
+    <Layout location={location} {...pageMetadata}>
       <GlobalStyle />
-      <Layout location={location} {...pageMetadata}>
-        {element}
-      </Layout>
-    </>
+      {element}
+    </Layout>
   );
 };
