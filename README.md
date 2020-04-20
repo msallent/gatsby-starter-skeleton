@@ -1,18 +1,19 @@
 <p align="center">
   <a href="https://gatsbyjs.org">
     <img alt="Gatsby" src="https://www.gatsbyjs.org/Gatsby-Logo.svg" width="350" />
-    <img alt="CI Status" src="https://travis-ci.com/msallent/gatsby-starter-skeleton.svg?branch=master" />
   </a>
+  <br />
+  <img alt="CI Status" src="https://travis-ci.com/msallent/gatsby-starter-skeleton.svg?branch=master" />
 </p>
 
 <br />
 
 Gatsby Skeleton is a barebones Gatsby starter that's meant to be used in conjunction with the [skeleton themes](https://github.com/msallent/gatsby-theme-skeleton).
 
-- **gatsby-theme-skeleton-core.** Core theme of the collection. Installing it will provide
+- **gatsby-theme-skeleton-core** — Core theme of the collection. Installing it will provide
   instructions on currently available themes and how to use them.
 
-- **gatsby-theme-skeleton-seo** Provides a Layout component that you can use to set per-page
+- **gatsby-theme-skeleton-seo** — Provides a Layout component that you can use to set per-page
   custom metadata. Ideally, you would use this within the wrapPageElement API. Example on how
   to use it can be found [here](https://github.com/msallent/gatsby-theme-skeleton/tree/master/example/skeleton-seo).
 
