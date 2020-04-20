@@ -1,12 +1,11 @@
 <p align="center">
+  <img alt="CI Status" src="https://travis-ci.com/msallent/gatsby-starter-skeleton.svg?branch=master" />
+  <br />
+  <br />
   <a href="https://gatsbyjs.org">
     <img alt="Gatsby" src="https://www.gatsbyjs.org/Gatsby-Logo.svg" width="350" />
   </a>
-  <br />
-  <img alt="CI Status" src="https://travis-ci.com/msallent/gatsby-starter-skeleton.svg?branch=master" />
 </p>
-
-<br />
 
 Gatsby Skeleton is a barebones Gatsby starter that's meant to be used in conjunction with the [skeleton themes](https://github.com/msallent/gatsby-theme-skeleton).
 
