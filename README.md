@@ -7,6 +7,8 @@
   </a>
 </p>
 
+<br />
+
 Gatsby Skeleton is a barebones Gatsby starter that's meant to be used in conjunction with the [skeleton themes](https://github.com/msallent/gatsby-theme-skeleton).
 
 - **gatsby-theme-skeleton-core** — Core theme of the collection. Installing it will provide
