@@ -4,7 +4,9 @@
   "schedule": "before 10am",
   "prHourlyLimit": 0,
   "labels": ["dependencies"],
+  "masterIssue": true,
   "automerge": true,
+  "automergeType": "branch",
   "major": {
     "automerge": false
   }
