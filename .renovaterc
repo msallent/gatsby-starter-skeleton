@@ -1,7 +1,7 @@
 {
   "extends": ["config:base"],
   "timezone": "America/Buenos_Aires",
-  "schedule": "before 10am",
+  "schedule": "before 10am on Monday",
   "prHourlyLimit": 0,
   "labels": ["dependencies"],
   "masterIssue": true,
