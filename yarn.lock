@@ -1384,10 +1384,10 @@
   dependencies:
     gatsby-plugin-typescript "^2.3.1"
 
-"@msallent/gatsby-theme-skeleton-seo@1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@msallent/gatsby-theme-skeleton-seo/-/gatsby-theme-skeleton-seo-1.0.1.tgz#9f009104c2303d31f2646d69e813a4ac6d62a5d9"
-  integrity sha512-M8N8OKdkkVPyCgvnfdyhIlaeZNOoo/j39rK0dJndavGt66coSYt+o7N8P84w46EVSGsV7FU1aI1oBNq6RN0dNQ==
+"@msallent/gatsby-theme-skeleton-seo@1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@msallent/gatsby-theme-skeleton-seo/-/gatsby-theme-skeleton-seo-1.0.2.tgz#a0572a8a7e48e53c6ce4b8d6eff31384e37f0696"
+  integrity sha512-XY9GqO26CoYpfgqlYCPNMyHw0XpVBombvtChgP+j3EaTJOQBg/kBqWjo0ku9mnAqwB0OLYnLBlx7d0W7r6t4Ww==
   dependencies:
     gatsby-plugin-react-helmet "^3.2.1"
     gatsby-plugin-sitemap "^2.3.1"
