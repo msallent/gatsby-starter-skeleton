@@ -1377,10 +1377,10 @@
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
 
-"@msallent/gatsby-theme-skeleton-core@1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@msallent/gatsby-theme-skeleton-core/-/gatsby-theme-skeleton-core-1.0.1.tgz#5d0a4b91dac42d25058e47e530e58cb994656762"
-  integrity sha512-W7gfg9bSwHf6EbUA4WnVf+lf093StOyMFWEJWPzt+HkynqOwW8MJzMebp1grPGNkGLkcdYB1oIT0e8EAmzeI9A==
+"@msallent/gatsby-theme-skeleton-core@1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@msallent/gatsby-theme-skeleton-core/-/gatsby-theme-skeleton-core-1.0.2.tgz#9d1cd756d913d9308b0402671910710c079a70e4"
+  integrity sha512-MtswE7FXuTjGzLwY6mL4t1RullW8J9x51uUt2IgNdYhMxGD4gISetrPIlKkWGHTTLSkUvdOlkA2v+B8nnBooLw==
   dependencies:
     gatsby-plugin-typescript "^2.3.1"
 
