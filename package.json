@@ -31,7 +31,7 @@
     "gatsby-transformer-sharp": "2.5.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "styled-components": "5.1.0"
+    "styled-components": "5.1.1"
   },
   "devDependencies": {
     "@types/node": "13.13.9",
