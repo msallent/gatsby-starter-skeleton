@@ -21,7 +21,7 @@
     "@msallent/gatsby-theme-skeleton-core": "1.0.2",
     "@msallent/gatsby-theme-skeleton-seo": "1.0.2",
     "babel-plugin-styled-components": "1.10.7",
-    "gatsby": "2.24.4",
+    "gatsby": "2.24.5",
     "gatsby-image": "2.4.13",
     "gatsby-plugin-react-svg": "3.0.0",
     "gatsby-plugin-sharp": "2.6.20",
