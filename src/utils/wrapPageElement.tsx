@@ -1,23 +1,10 @@
-import React from 'react';
-import { Layout } from '@msallent/gatsby-theme-skeleton-seo/src/components/Layout';
-import { GlobalStyle } from './globalStyle';
+import React, { FunctionComponent } from 'react';
+import { Layout } from '../components/Layout';
+import { SEO } from '../components/SEO';
 
-export const wrapPageElement: React.FC = ({ element, props }: any) => {
-  const { data, location } = props;
-
-  const currentNode = data && data.currentNode;
-  const pageMetadata = currentNode && {
-    title: currentNode.title,
-    description: currentNode.description,
-    keywords: currentNode.keywords,
-    language: currentNode.language,
-    imageURI: currentNode.imageURI,
-  };
-
-  return (
-    <Layout location={location} {...pageMetadata}>
-      <GlobalStyle />
-      {element}
-    </Layout>
-  );
-};
+export const wrapPageElement: FunctionComponent = ({ element, props: { location } }: any) => (
+  <Layout>
+    <SEO location={location} />
+    {element}
+  </Layout>
+);
