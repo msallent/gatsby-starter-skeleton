@@ -4,6 +4,7 @@
  * See: https://www.gatsbyjs.org/docs/browser-apis/
  */
 
-import { wrapPageElement as wrap } from './src/utils/wrapPageElement';
+import 'normalize.css';
+import './src/style/main.scss';
 
-export const wrapPageElement = wrap;
+export { wrapPageElement } from './src/utils/wrapPageElement';
