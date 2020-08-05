@@ -4,6 +4,8 @@
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
 
+const isProduction = process.env.NODE_ENV === 'production';
+
 module.exports = {
   siteMetadata: {
     title: 'Gatsby Skeleton',
@@ -14,7 +16,16 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-sass',
+    {
+      resolve: 'gatsby-plugin-sass',
+      options: {
+        cssLoaderOptions: {
+          localIdentName: isProduction
+            ? '[local]-[hash:base64:5]'
+            : '[name]_[local]-[hash:base64:5]',
+        },
+      },
+    },
     'gatsby-plugin-sharp',
     'gatsby-plugin-sitemap',
     'gatsby-plugin-svgr',
