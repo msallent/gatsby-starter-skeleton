@@ -4,6 +4,4 @@
  * See: https://www.gatsbyjs.org/docs/ssr-apis/
  */
 
-import { wrapPageElement as wrap } from './src/utils/wrapPageElement';
-
-export const wrapPageElement = wrap;
+export { wrapPageElement } from './src/utils/wrapPageElement';
