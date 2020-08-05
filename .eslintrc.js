@@ -31,6 +31,9 @@ module.exports = {
       files: ['**/*.ts', '**/*.tsx'],
       parser: '@typescript-eslint/parser',
       extends: ['prettier/@typescript-eslint', 'plugin:@typescript-eslint/recommended'],
+      rules: {
+        '@typescript-eslint/triple-slash-reference': [2, { types: 'always' }],
+      },
     },
   ],
 };
