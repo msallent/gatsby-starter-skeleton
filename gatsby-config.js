@@ -5,13 +5,19 @@
  */
 
 module.exports = {
+  siteMetadata: {
+    title: 'Gatsby Skeleton',
+    description: 'Gatsby starter featuring TypeScript, ESLint, Prettier and more...',
+    keywords: ['gatsby', 'starter', 'typescript', 'eslint', 'prettier', 'layout', 'seo'],
+    imageURI: '/images/social.jpg',
+    siteUrl: 'http://localhost:8000',
+  },
   plugins: [
-    '@msallent/gatsby-theme-skeleton-core',
-    '@msallent/gatsby-theme-skeleton-seo',
-    'gatsby-plugin-react-svg',
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sass',
     'gatsby-plugin-sharp',
-    'gatsby-plugin-styled-components',
-    'gatsby-transformer-sharp',
+    'gatsby-plugin-sitemap',
+    'gatsby-plugin-svgr',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -19,5 +25,6 @@ module.exports = {
         name: 'assets',
       },
     },
+    'gatsby-transformer-sharp',
   ],
 };
