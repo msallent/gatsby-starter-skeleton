@@ -1,0 +1,36 @@
+.app {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(1rem + 2vmin);
+  font-family: sans-serif;
+  color: white;
+}
+
+.logo {
+  height: 35vmin;
+  animation: logo-animation 5s linear infinite;
+  margin-bottom: 1rem;
+}
+
+.link {
+  color: #8c4bcc;
+  text-decoration: underline;
+}
+
+@keyframes logo-animation {
+  0% {
+    transform: scale(1.05);
+  }
+
+  50% {
+    transform: scale(0.95);
+  }
+
+  100% {
+    transform: scale(1.05);
+  }
+}
