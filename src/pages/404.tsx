@@ -1,5 +1,5 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 
-const NotFound: React.FC = () => <div>Error 404 - Not Found</div>;
+const NotFound: FunctionComponent = () => <div>Error 404 - Not Found</div>;
 
 export default NotFound;
