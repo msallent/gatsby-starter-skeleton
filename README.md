@@ -9,9 +9,9 @@
 
 <br />
 
-Gatsby Skeleton is an (almost) barebones Gatsby starter that intends to save the user the hassle of having to set up everything every time and start with development right away.
+**Gatsby Skeleton** is an (almost) barebones Gatsby starter that intends to save the user the hassle of having to set up everything every time and start with development right away.
 
-It includes TypeScript (even for the gatsby-\* files!) along ESLint, Prettier, stylelint, husky and lint-staged.
+It includes TypeScript (even for the `gatsby-\*` files!) along ESLint, Prettier, stylelint, husky and lint-staged.
 
 ## :zap: Features
 
