@@ -14,8 +14,8 @@ const gatsbyConfig: GatsbyConfig = {
     title: 'Gatsby Skeleton',
     description: 'Gatsby starter featuring TypeScript, ESLint, Prettier and more...',
     keywords: ['gatsby', 'starter', 'typescript', 'eslint', 'prettier', 'layout', 'seo'],
-    imageURI: '/images/social.jpg',
-    siteUrl: 'http://localhost:8000',
+    imageURI: '/social.jpg',
+    siteUrl: 'https://gatsby-starter-skeleton.netlify.app',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
