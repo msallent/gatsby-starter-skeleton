@@ -9,28 +9,24 @@
 
 <br />
 
-Gatsby Skeleton is a barebones Gatsby starter that's meant to be used in conjunction with the [skeleton themes](https://github.com/msallent/gatsby-theme-skeleton).
+Gatsby Skeleton is an (almost) barebones Gatsby starter that intends to save the user the hassle of having to set up everything every time and start with development right away.
 
-- **gatsby-theme-skeleton-core** — Core theme of the collection. Installing it will provide
-  instructions on currently available themes and how to use them.
-
-- **gatsby-theme-skeleton-seo** — Provides a Layout component that you can use to set per-page
-  custom metadata. Ideally, you would use this within the wrapPageElement API. Example on how
-  to use it can be found [here](https://github.com/msallent/gatsby-theme-skeleton/tree/master/example/skeleton-seo).
+It includes TypeScript (even for the gatsby-\* files!) along ESLint, Prettier, stylelint, husky and lint-staged.
 
 ## :zap: Features
 
 **dependencies**:
 
-    ├── babel-plugin-styled-components
     ├── gatsby-image
-    ├── gatsby-plugin-react-svg
+    ├── gatsby-plugin-react-helmet
+    ├── gatsby-plugin-sass
     ├── gatsby-plugin-sharp
-    ├── gatsby-plugin-styled-components
-    ├── gatsby-plugin-typescript
+    ├── gatsby-plugin-sitemap
+    ├── gatsby-plugin-svgr
     ├── gatsby-source-filesystem
     ├── gatsby-transformer-sharp
-    └── styled-components
+    ├── normalize.css
+    └── react-helmet
 
 **devDependencies**:
 
@@ -66,4 +62,4 @@ Gatsby Skeleton is a barebones Gatsby starter that's meant to be used in conjunc
 
     _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
 
-    Open the `my-project` directory in your code editor of choice and edit `src/pages/index.jsx`. Save your changes and the browser will update in real time!
+    Open the `my-project` directory in your code editor of choice and edit `src/pages/index.tsx`. Save your changes and the browser will update in real time!
