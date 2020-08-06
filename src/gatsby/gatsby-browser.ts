@@ -7,4 +7,4 @@
 import 'normalize.css';
 import '../style/main.scss';
 
-export { wrapPageElement } from '../utils/wrapPageElement';
+export { wrapPageElement } from './api/wrapPageElement';
