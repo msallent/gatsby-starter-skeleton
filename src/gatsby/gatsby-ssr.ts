@@ -4,4 +4,4 @@
  * See: https://www.gatsbyjs.org/docs/ssr-apis/
  */
 
-export { wrapPageElement } from './src/utils/wrapPageElement';
+export { wrapPageElement } from '../utils/wrapPageElement';
