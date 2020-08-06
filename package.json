@@ -11,7 +11,7 @@
     "fix:scss": "yarn lint:scss --fix",
     "fix:prettier": "yarn lint:prettier --write",
     "lint": "yarn lint:js && yarn lint:scss && yarn lint:prettier",
-    "lint:js": "eslint --ignore-path .gitignore . --ext ts --ext tsx --ext js",
+    "lint:js": "eslint --ignore-path .gitignore . --ext js --ext ts --ext tsx",
     "lint:scss": "stylelint --ignore-path .gitignore 'src/**/*.scss'",
     "lint:prettier": "prettier --ignore-path .gitignore --check .",
     "serve": "gatsby serve",
