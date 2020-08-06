@@ -9,7 +9,7 @@ import { resolve } from 'path';
 
 const isProduction = process.env.NODE_ENV === 'production';
 
-export const gatsbyConfig: GatsbyConfig = {
+const gatsbyConfig: GatsbyConfig = {
   siteMetadata: {
     title: 'Gatsby Skeleton',
     description: 'Gatsby starter featuring TypeScript, ESLint, Prettier and more...',
@@ -42,3 +42,5 @@ export const gatsbyConfig: GatsbyConfig = {
     'gatsby-transformer-sharp',
   ],
 };
+
+export default gatsbyConfig;
