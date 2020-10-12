@@ -7128,10 +7128,10 @@ gatsby-plugin-svgr@2.0.2:
   resolved "https://registry.yarnpkg.com/gatsby-plugin-svgr/-/gatsby-plugin-svgr-2.0.2.tgz#22e08fb67ec63b68aca6ac3e89962af20214e2a5"
   integrity sha512-54REIMe79qFBAwpcnWHBkvEE9CKoEVkefF9rDXai0k642r91SZ4UeWFuAmsegPG+sPVub7tHfHu/2LVXK1I9kg==
 
-gatsby-plugin-ts-config@1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-ts-config/-/gatsby-plugin-ts-config-1.0.0.tgz#63600b589a808e11513d76e7ce12a7756d8c3baf"
-  integrity sha512-/rcJpTHveEgZJqYXhPs7lKbeyrG+oGn1lUcUAV7krd4F2Arwri9WZ56cT/Irh84affUUQ1LcxM4pKu8/MDDQMA==
+gatsby-plugin-ts-config@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-ts-config/-/gatsby-plugin-ts-config-1.1.0.tgz#9a17a6aa1236433bce05653fb7ec7df4ec73c7e3"
+  integrity sha512-BonluUyjp4A2edwnjhD6PnFXmAb3jP337e1R5WlFvkWRpv6ecuTxzIgCN4Vk1Zifbn1BFCzjXd3mtHywG4IZzQ==
   dependencies:
     "@babel/plugin-proposal-nullish-coalescing-operator" "^7.10.1"
     "@babel/plugin-proposal-optional-chaining" "^7.10.3"
@@ -7147,7 +7147,7 @@ gatsby-plugin-ts-config@1.0.0:
     babel-plugin-dynamic-import-node "^2.3.3"
     fs-extra "^8.1.0"
     lodash.mergewith "^4.6.2"
-    ts-node "^8.6.2"
+    ts-node "^9.0.0"
 
 gatsby-plugin-typescript@^2.4.21:
   version "2.4.21"
@@ -14914,10 +14914,10 @@ trough@^1.0.0:
   resolved "https://registry.yarnpkg.com/true-case-path/-/true-case-path-2.2.1.tgz#c5bf04a5bbec3fd118be4084461b3a27c4d796bf"
   integrity sha512-0z3j8R7MCjy10kc/g+qg7Ln3alJTodw9aDuVWZa3uiWqfuBMKeAeP2ocWcxoyM3D73yz3Jt/Pu4qPr4wHSdB/Q==
 
-ts-node@^8.6.2:
-  version "8.10.2"
-  resolved "https://registry.yarnpkg.com/ts-node/-/ts-node-8.10.2.tgz#eee03764633b1234ddd37f8db9ec10b75ec7fb8d"
-  integrity sha512-ISJJGgkIpDdBhWVu3jufsWpK3Rzo7bdiIXJjQc0ynKxVOVcg2oIrf2H2cejminGrptVc6q6/uynAHNCuWGbpVA==
+ts-node@^9.0.0:
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/ts-node/-/ts-node-9.0.0.tgz#e7699d2a110cc8c0d3b831715e417688683460b3"
+  integrity sha512-/TqB4SnererCDR/vb4S/QvSZvzQMJN8daAslg7MeaiHvD8rDZsSfXmNeNumyZZzMned72Xoq/isQljYSt8Ynfg==
   dependencies:
     arg "^4.1.0"
     diff "^4.0.1"
