@@ -26,9 +26,7 @@ const gatsbyConfig: GatsbyConfig = {
       options: {
         implementation: require('sass'),
         cssLoaderOptions: {
-          localIdentName: isProduction
-            ? '[local]-[hash:base64:5]'
-            : '[name]_[local]-[hash:base64:5]',
+          localIdentName: isProduction ? '[hash:base64:5]' : '[name]_[local]-[hash:base64:5]',
         },
       },
     },
