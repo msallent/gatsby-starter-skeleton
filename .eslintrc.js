@@ -32,6 +32,8 @@ module.exports = {
       parser: '@typescript-eslint/parser',
       extends: ['prettier/@typescript-eslint', 'plugin:@typescript-eslint/recommended'],
       rules: {
+        'no-use-before-define': 0,
+        '@typescript-eslint/no-use-before-define': 2,
         '@typescript-eslint/triple-slash-reference': [2, { types: 'always' }],
       },
     },
