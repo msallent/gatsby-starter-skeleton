@@ -5,7 +5,7 @@
   "version": "1.0.0",
   "scripts": {
     "build": "gatsby build",
-    "dev": "gatsby develop",
+    "dev": "gatsby develop --host 0.0.0.0",
     "fix": "yarn fix:js && yarn fix:scss && yarn fix:prettier",
     "fix:js": "yarn lint:js --fix",
     "fix:scss": "yarn lint:scss --fix",
@@ -14,7 +14,7 @@
     "lint:js": "eslint --ignore-path .gitignore . --ext js --ext ts --ext tsx",
     "lint:scss": "stylelint --ignore-path .gitignore 'src/**/*.scss'",
     "lint:prettier": "prettier --ignore-path .gitignore --check .",
-    "serve": "gatsby serve",
+    "serve": "gatsby serve --host 0.0.0.0",
     "type-check": "tsc"
   },
   "dependencies": {
