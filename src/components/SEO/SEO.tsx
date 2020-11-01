@@ -12,7 +12,7 @@ interface SEOProps {
   location: Location;
 }
 
-interface SiteQuery {
+interface SiteMetadataQuery {
   site: {
     siteMetadata: {
       title: string;
@@ -31,7 +31,9 @@ export const SEO: FunctionComponent<SEOProps> = ({
   language = 'en',
   location,
 }) => {
-  const { site } = useStaticQuery<SiteQuery>(
+  const {
+    site: { siteMetadata },
+  } = useStaticQuery<SiteMetadataQuery>(
     graphql`
       query {
         site {
@@ -49,22 +51,22 @@ export const SEO: FunctionComponent<SEOProps> = ({
   return (
     <Helmet
       title={title}
-      defaultTitle={site.siteMetadata.title}
-      titleTemplate={`${site.siteMetadata.title} - %s`}
+      defaultTitle={siteMetadata.title}
+      titleTemplate={`${siteMetadata.title} - %s`}
       htmlAttributes={{ lang: language }}
       link={[{ rel: 'icon', type: 'image/ico', href: favicon }]}
       meta={[
         {
           name: 'description',
-          content: description || site.siteMetadata.description,
+          content: description || siteMetadata.description,
         },
         {
           property: 'keywords',
-          content: [...keywords, ...site.siteMetadata.keywords].join(', '),
+          content: [...keywords, ...siteMetadata.keywords].join(', '),
         },
         {
           property: 'og:title',
-          content: title || site.siteMetadata.title,
+          content: title || siteMetadata.title,
         },
         {
           property: 'og:url',
@@ -72,7 +74,7 @@ export const SEO: FunctionComponent<SEOProps> = ({
         },
         {
           property: 'og:description',
-          content: description || site.siteMetadata.description,
+          content: description || siteMetadata.description,
         },
         {
           property: 'og:type',
@@ -80,7 +82,7 @@ export const SEO: FunctionComponent<SEOProps> = ({
         },
         {
           property: 'og:image',
-          content: `${location.origin}${imageURI || site.siteMetadata.imageURI}`,
+          content: `${location.origin}${imageURI || siteMetadata.imageURI}`,
         },
         {
           property: 'og:image:alt',
