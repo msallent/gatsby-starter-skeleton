@@ -33,7 +33,7 @@
     "react-helmet": "6.1.0"
   },
   "devDependencies": {
-    "@svgr/webpack": "5.4.0",
+    "@svgr/webpack": "5.5.0",
     "@types/node": "13.13.30",
     "@types/react": "16.9.56",
     "@types/react-dom": "16.9.9",
