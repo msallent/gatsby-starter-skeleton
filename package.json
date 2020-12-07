@@ -5,6 +5,7 @@
   "version": "1.0.0",
   "scripts": {
     "build": "gatsby build",
+    "clean": "gatsby clean",
     "dev": "gatsby develop --host 0.0.0.0",
     "fix": "yarn fix:js && yarn fix:scss && yarn fix:prettier",
     "fix:js": "yarn lint:js --fix",
