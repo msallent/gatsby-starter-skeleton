@@ -4,8 +4,6 @@
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
 
-/* eslint-disable global-require */
-
 import { GatsbyConfig } from 'gatsby';
 import { resolve } from 'path';
 
@@ -24,7 +22,6 @@ const gatsbyConfig: GatsbyConfig = {
     {
       resolve: 'gatsby-plugin-sass',
       options: {
-        implementation: require('sass'),
         cssLoaderOptions: {
           localIdentName: isProduction ? '[hash:base64:5]' : '[name]_[local]-[hash:base64:5]',
         },
