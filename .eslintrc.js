@@ -12,11 +12,6 @@ module.exports = {
     browser: true,
     node: true,
   },
-  settings: {
-    'import/resolver': {
-      typescript: {},
-    },
-  },
   rules: {
     'import/extensions': [2, { ts: 'never', tsx: 'never' }],
     'import/no-extraneous-dependencies': 0,
@@ -30,7 +25,11 @@ module.exports = {
     {
       files: ['**/*.ts', '**/*.tsx'],
       parser: '@typescript-eslint/parser',
-      extends: ['prettier/@typescript-eslint', 'plugin:@typescript-eslint/recommended'],
+      extends: [
+        'prettier/@typescript-eslint',
+        'plugin:import/typescript',
+        'plugin:@typescript-eslint/recommended',
+      ],
       rules: {
         'no-use-before-define': 0,
         '@typescript-eslint/no-use-before-define': 2,
