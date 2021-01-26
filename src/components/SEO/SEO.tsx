@@ -1,39 +1,29 @@
 import React, { FunctionComponent } from 'react';
 import { Helmet } from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
-import favicon from '../../assets/favicon.ico';
+import Favicon from '../../assets/favicon.ico';
 
 interface SEOProps {
-  title?: string;
-  description?: string;
-  keywords?: Array<string>;
-  imageURI?: string;
-  language?: string;
   location: Location;
 }
 
-interface SiteMetadataQuery {
+interface SEOQuery {
   site: {
     siteMetadata: {
       title: string;
       description: string;
       keywords: Array<string>;
-      imageURI: string;
+      siteUrl: string;
+      image: string;
+      language: string;
     };
   };
 }
 
-export const SEO: FunctionComponent<SEOProps> = ({
-  title,
-  description,
-  keywords = [],
-  imageURI,
-  language = 'en',
-  location,
-}) => {
+export const SEO: FunctionComponent<SEOProps> = ({ location }) => {
   const {
     site: { siteMetadata },
-  } = useStaticQuery<SiteMetadataQuery>(
+  } = useStaticQuery<SEOQuery>(
     graphql`
       query {
         site {
@@ -41,7 +31,9 @@ export const SEO: FunctionComponent<SEOProps> = ({
             title
             description
             keywords
-            imageURI
+            siteUrl
+            image
+            language
           }
         }
       }
@@ -50,31 +42,30 @@ export const SEO: FunctionComponent<SEOProps> = ({
 
   return (
     <Helmet
-      title={title}
       defaultTitle={siteMetadata.title}
       titleTemplate={`${siteMetadata.title} - %s`}
-      htmlAttributes={{ lang: language }}
-      link={[{ rel: 'icon', type: 'image/ico', href: favicon }]}
+      htmlAttributes={{ lang: siteMetadata.language }}
+      link={[{ rel: 'icon', type: 'image/ico', href: Favicon }]}
       meta={[
         {
           name: 'description',
-          content: description || siteMetadata.description,
+          content: siteMetadata.description,
         },
         {
           property: 'keywords',
-          content: [...keywords, ...siteMetadata.keywords].join(', '),
+          content: siteMetadata.keywords.join(', '),
         },
         {
           property: 'og:title',
-          content: title || siteMetadata.title,
+          content: siteMetadata.title,
         },
         {
           property: 'og:url',
-          content: location.href,
+          content: `${siteMetadata.siteUrl}${location.pathname}`,
         },
         {
           property: 'og:description',
-          content: description || siteMetadata.description,
+          content: siteMetadata.description,
         },
         {
           property: 'og:type',
@@ -82,11 +73,11 @@ export const SEO: FunctionComponent<SEOProps> = ({
         },
         {
           property: 'og:image',
-          content: `${location.origin}${imageURI || siteMetadata.imageURI}`,
+          content: `${siteMetadata.siteUrl}${siteMetadata.image}`,
         },
         {
           property: 'og:image:alt',
-          content: title,
+          content: siteMetadata.title,
         },
         {
           name: 'twitter:card',
