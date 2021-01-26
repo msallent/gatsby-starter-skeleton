@@ -4,7 +4,4 @@
  * See: https://www.gatsbyjs.org/docs/browser-apis/
  */
 
-import 'normalize.css';
-import './style/main.scss';
-
 export { wrapPageElement } from './components/wrapPageElement';
