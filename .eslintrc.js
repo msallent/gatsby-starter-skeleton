@@ -1,6 +1,6 @@
 module.exports = {
   root: true,
-  extends: ['airbnb', 'plugin:prettier/recommended'],
+  extends: ['airbnb', 'airbnb/hooks', 'plugin:prettier/recommended'],
   parserOptions: {
     ecmaVersion: 2017,
     sourceType: 'module',
