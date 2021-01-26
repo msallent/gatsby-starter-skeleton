@@ -5,6 +5,6 @@
  */
 
 import 'normalize.css';
-import '../style/main.scss';
+import './style/main.scss';
 
-export { wrapPageElement } from './api/wrapPageElement';
+export { wrapPageElement } from './components/wrapPageElement';
