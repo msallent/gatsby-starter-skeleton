@@ -14,8 +14,9 @@ const gatsbyConfig: GatsbyConfig = {
     title: 'Gatsby Skeleton',
     description: 'Gatsby starter featuring TypeScript, ESLint, Prettier and more...',
     keywords: ['gatsby', 'starter', 'typescript', 'eslint', 'prettier', 'layout', 'seo'],
-    imageURI: '/social.jpg',
     siteUrl: 'https://gatsby-starter-skeleton.netlify.app',
+    image: '/social.jpg',
+    language: 'en',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -33,7 +34,7 @@ const gatsbyConfig: GatsbyConfig = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        path: resolve(__dirname, '../assets'),
+        path: resolve(__dirname, './assets'),
         name: 'assets',
       },
     },
