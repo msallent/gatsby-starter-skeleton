@@ -1,71 +1,41 @@
 import React, { FunctionComponent } from 'react';
 import { Helmet } from 'react-helmet';
-import { useStaticQuery, graphql } from 'gatsby';
+import { useSiteMetadata } from '../../hooks/useSiteMetadata';
 import Favicon from '../../assets/favicon.ico';
 
 interface SEOProps {
   location: Location;
 }
 
-interface SEOQuery {
-  site: {
-    siteMetadata: {
-      title: string;
-      description: string;
-      keywords: Array<string>;
-      siteUrl: string;
-      image: string;
-      language: string;
-    };
-  };
-}
-
 export const SEO: FunctionComponent<SEOProps> = ({ location }) => {
-  const {
-    site: { siteMetadata },
-  } = useStaticQuery<SEOQuery>(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-            description
-            keywords
-            siteUrl
-            image
-            language
-          }
-        }
-      }
-    `
-  );
+  const { title, description, keywords, siteUrl, imageUrl, language } = useSiteMetadata();
 
   return (
     <Helmet
-      defaultTitle={siteMetadata.title}
-      titleTemplate={`${siteMetadata.title} - %s`}
-      htmlAttributes={{ lang: siteMetadata.language }}
+      defaultTitle={title}
+      titleTemplate={`${title} - %s`}
+      htmlAttributes={{ lang: language }}
       link={[{ rel: 'icon', type: 'image/ico', href: Favicon }]}
       meta={[
         {
           name: 'description',
-          content: siteMetadata.description,
+          content: description,
         },
         {
           property: 'keywords',
-          content: siteMetadata.keywords.join(', '),
+          content: keywords.join(', '),
         },
         {
           property: 'og:title',
-          content: siteMetadata.title,
+          content: title,
         },
         {
           property: 'og:url',
-          content: `${siteMetadata.siteUrl}${location.pathname}`,
+          content: `${siteUrl}${location.pathname}`,
         },
         {
           property: 'og:description',
-          content: siteMetadata.description,
+          content: description,
         },
         {
           property: 'og:type',
@@ -73,11 +43,11 @@ export const SEO: FunctionComponent<SEOProps> = ({ location }) => {
         },
         {
           property: 'og:image',
-          content: `${siteMetadata.siteUrl}${siteMetadata.image}`,
+          content: `${siteUrl}${imageUrl}`,
         },
         {
           property: 'og:image:alt',
-          content: siteMetadata.title,
+          content: title,
         },
         {
           name: 'twitter:card',
