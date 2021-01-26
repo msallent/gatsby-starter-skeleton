@@ -15,7 +15,7 @@ const gatsbyConfig: GatsbyConfig = {
     description: 'Gatsby starter featuring TypeScript, ESLint, Prettier and more...',
     keywords: ['gatsby', 'starter', 'typescript', 'eslint', 'prettier', 'layout', 'seo'],
     siteUrl: 'https://gatsby-starter-skeleton.netlify.app',
-    image: '/social.jpg',
+    imageUrl: '/social.jpg',
     language: 'en',
   },
   plugins: [
