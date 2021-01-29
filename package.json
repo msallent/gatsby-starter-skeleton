@@ -7,13 +7,12 @@
     "build": "gatsby build",
     "clean": "gatsby clean",
     "dev": "gatsby develop --host 0.0.0.0",
-    "fix": "yarn fix:js && yarn fix:scss && yarn fix:prettier",
+    "fix": "yarn fix:js && yarn fix:prettier",
     "fix:js": "yarn lint:js --fix",
-    "fix:scss": "yarn lint:scss --fix",
     "fix:prettier": "yarn lint:prettier --write",
-    "lint": "yarn lint:js && yarn lint:scss && yarn lint:prettier",
+    "lint": "yarn lint:js && yarn lint:css && yarn lint:prettier",
     "lint:js": "eslint --ignore-path .gitignore . --ext js --ext ts --ext tsx",
-    "lint:scss": "stylelint --ignore-path .gitignore 'src/**/*.scss'",
+    "lint:css": "stylelint --ignore-path .gitignore './src/**/*.ts'",
     "lint:prettier": "prettier --ignore-path .gitignore --check .",
     "serve": "gatsby serve --host 0.0.0.0",
     "type-check": "tsc"
@@ -41,7 +40,7 @@
     "@types/react": "17.0.0",
     "@types/react-dom": "17.0.0",
     "@types/react-helmet": "6.1.0",
-    "@types/styled-components": "^5.1.7",
+    "@types/styled-components": "5.1.7",
     "@typescript-eslint/eslint-plugin": "4.11.0",
     "@typescript-eslint/parser": "4.11.0",
     "eslint": "7.18.0",
@@ -71,9 +70,6 @@
   },
   "lint-staged": {
     "src/**/*.{js,ts,tsx}": "eslint --fix",
-    "src/**/*.scss": [
-      "prettier --write",
-      "stylelint --fix"
-    ]
+    "src/**/*.ts": "stylelint"
   }
 }
