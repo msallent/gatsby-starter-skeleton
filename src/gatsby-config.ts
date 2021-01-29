@@ -7,8 +7,6 @@
 import { GatsbyConfig } from 'gatsby';
 import { resolve } from 'path';
 
-const isProduction = process.env.NODE_ENV === 'production';
-
 const gatsbyConfig: GatsbyConfig = {
   siteMetadata: {
     title: 'Gatsby Skeleton',
@@ -20,16 +18,9 @@ const gatsbyConfig: GatsbyConfig = {
   },
   plugins: [
     'gatsby-plugin-react-helmet',
-    {
-      resolve: 'gatsby-plugin-sass',
-      options: {
-        cssLoaderOptions: {
-          localIdentName: isProduction ? '[hash:base64:5]' : '[name]_[local]-[hash:base64:5]',
-        },
-      },
-    },
     'gatsby-plugin-sharp',
     'gatsby-plugin-sitemap',
+    'gatsby-plugin-styled-components',
     'gatsby-plugin-svgr',
     {
       resolve: 'gatsby-source-filesystem',
