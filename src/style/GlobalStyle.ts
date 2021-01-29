@@ -42,6 +42,7 @@ export const GlobalStyle = createGlobalStyle`
   h5,
   h6 {
     margin: 0;
+    font-size: 100%;
     font-weight: normal;
   }
 
