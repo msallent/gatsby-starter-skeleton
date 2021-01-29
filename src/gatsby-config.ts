@@ -20,7 +20,12 @@ const gatsbyConfig: GatsbyConfig = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sharp',
     'gatsby-plugin-sitemap',
-    'gatsby-plugin-styled-components',
+    {
+      resolve: 'gatsby-plugin-styled-components',
+      options: {
+        displayName: process.env.NODE_ENV !== 'production',
+      },
+    },
     'gatsby-plugin-svgr',
     {
       resolve: 'gatsby-source-filesystem',
