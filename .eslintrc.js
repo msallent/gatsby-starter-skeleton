@@ -32,6 +32,7 @@ module.exports = {
         'import/extensions': ['error', { ts: 'never', tsx: 'never' }],
         'no-use-before-define': 'off',
         'react/prop-types': 'off',
+        '@typescript-eslint/explicit-module-boundary-types': 'off',
         '@typescript-eslint/no-use-before-define': 'error',
       },
     },
