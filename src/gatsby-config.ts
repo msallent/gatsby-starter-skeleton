@@ -6,6 +6,11 @@
 
 import { GatsbyConfig } from 'gatsby';
 import { resolve } from 'path';
+import dotenv from 'dotenv';
+
+dotenv.config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
 
 const gatsbyConfig: GatsbyConfig = {
   siteMetadata: {
