@@ -13,20 +13,23 @@
 
 It includes TypeScript (even for the `gatsby-*` files!) along ESLint, Prettier, stylelint, husky and lint-staged.
 
+For styling, styled-components is used. Everything already set up.
+
 ## :zap: Features
 
 **dependencies**:
 
     ├── gatsby-image
     ├── gatsby-plugin-react-helmet
-    ├── gatsby-plugin-sass
     ├── gatsby-plugin-sharp
     ├── gatsby-plugin-sitemap
+    ├── gatsby-plugin-styled-components
     ├── gatsby-plugin-svgr
     ├── gatsby-source-filesystem
     ├── gatsby-transformer-sharp
     ├── normalize.css
-    └── react-helmet
+    ├── react-helmet
+    └── styled-components
 
 **devDependencies**:
 
@@ -44,7 +47,7 @@ It includes TypeScript (even for the `gatsby-*` files!) along ESLint, Prettier, 
     Use the Gatsby CLI to create a new site, specifying the gatsby-skeleton starter.
 
     ```sh
-    gatsby new my-project https://github.com/msallent/gatsby-skeleton/
+    gatsby new my-project https://github.com/msallent/gatsby-starter-skeleton/
     ```
 
 1.  **Start developing.**
@@ -53,7 +56,7 @@ It includes TypeScript (even for the `gatsby-*` files!) along ESLint, Prettier, 
 
     ```sh
     cd my-project/
-    gatsby develop
+    yarn dev
     ```
 
 1.  **Open the source code and start editing!**
