@@ -2,7 +2,7 @@ import styled, { keyframes } from 'styled-components';
 import { ReactComponent as Logo } from '../../assets/svg/gatsby.svg';
 
 export const Container = styled.div`
-  background-color: #282c34;
+  background-color: ${({ theme }) => theme.colors.primary};
   min-height: 100vh;
   display: flex;
   flex-direction: column;
