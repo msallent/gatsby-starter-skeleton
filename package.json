@@ -2,7 +2,7 @@
   "name": "gatsby-starter-skeleton",
   "license": "MIT",
   "private": true,
-  "version": "1.0.0",
+  "version": "2.0.0",
   "scripts": {
     "build": "gatsby build",
     "clean": "gatsby clean",
