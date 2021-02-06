@@ -1,10 +1,11 @@
 import React, { FunctionComponent } from 'react';
 import { PageProps } from 'gatsby';
-import { SEO } from '../SEO';
-import '../../style/main.scss';
+import { GlobalStyle } from '../../style/GlobalStyle';
+import { SEO } from '../SEO/SEO';
 
 export const Layout: FunctionComponent<Omit<PageProps, 'children'>> = ({ children, location }) => (
   <>
+    <GlobalStyle />
     <SEO location={location} />
     {children}
   </>

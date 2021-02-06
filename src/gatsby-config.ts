@@ -6,8 +6,11 @@
 
 import { GatsbyConfig } from 'gatsby';
 import { resolve } from 'path';
+import dotenv from 'dotenv';
 
-const isProduction = process.env.NODE_ENV === 'production';
+dotenv.config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
 
 const gatsbyConfig: GatsbyConfig = {
   siteMetadata: {
@@ -20,16 +23,14 @@ const gatsbyConfig: GatsbyConfig = {
   },
   plugins: [
     'gatsby-plugin-react-helmet',
-    {
-      resolve: 'gatsby-plugin-sass',
-      options: {
-        cssLoaderOptions: {
-          localIdentName: isProduction ? '[hash:base64:5]' : '[name]_[local]-[hash:base64:5]',
-        },
-      },
-    },
     'gatsby-plugin-sharp',
     'gatsby-plugin-sitemap',
+    {
+      resolve: 'gatsby-plugin-styled-components',
+      options: {
+        displayName: process.env.NODE_ENV !== 'production',
+      },
+    },
     'gatsby-plugin-svgr',
     {
       resolve: 'gatsby-source-filesystem',

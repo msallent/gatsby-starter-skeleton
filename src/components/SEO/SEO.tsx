@@ -3,57 +3,33 @@ import { Helmet } from 'react-helmet';
 import { useSiteMetadata } from '../../hooks/useSiteMetadata';
 import Favicon from '../../assets/favicon.ico';
 
-interface SEOProps {
+export interface SEOProps {
   location: Location;
+  pageMetadata?: {
+    title?: string;
+    description?: string;
+    keywords?: Array<string>;
+    imageUrl?: string;
+    language?: string;
+  };
 }
 
-export const SEO: FunctionComponent<SEOProps> = ({ location }) => {
+export const SEO: FunctionComponent<SEOProps> = ({ location, pageMetadata }) => {
   const { title, description, keywords, siteUrl, imageUrl, language } = useSiteMetadata();
 
   return (
-    <Helmet
-      defaultTitle={title}
-      titleTemplate={`${title} - %s`}
-      htmlAttributes={{ lang: language }}
-      link={[{ rel: 'icon', type: 'image/ico', href: Favicon }]}
-      meta={[
-        {
-          name: 'description',
-          content: description,
-        },
-        {
-          property: 'keywords',
-          content: keywords.join(', '),
-        },
-        {
-          property: 'og:title',
-          content: title,
-        },
-        {
-          property: 'og:url',
-          content: `${siteUrl}${location.pathname}`,
-        },
-        {
-          property: 'og:description',
-          content: description,
-        },
-        {
-          property: 'og:type',
-          content: 'website',
-        },
-        {
-          property: 'og:image',
-          content: `${siteUrl}${imageUrl}`,
-        },
-        {
-          property: 'og:image:alt',
-          content: title,
-        },
-        {
-          name: 'twitter:card',
-          content: 'summary_large_image',
-        },
-      ]}
-    />
+    <Helmet title={pageMetadata?.title} defaultTitle={title} titleTemplate={`${title} - %s`}>
+      <html lang={pageMetadata?.language || language} />
+      <link rel="icon" type="image/ico" href={Favicon} />
+      <meta name="description" content={pageMetadata?.description || description} />
+      <meta name="keywords" content={(pageMetadata?.keywords || keywords).join(', ')} />
+      <meta name="og:title" content={pageMetadata?.title || title} />
+      <meta name="og:url" content={`${siteUrl}${location.pathname}`} />
+      <meta name="og:description" content={pageMetadata?.description || description} />
+      <meta name="og:type" content="website" />
+      <meta name="og:image" content={pageMetadata?.imageUrl || `${siteUrl}${imageUrl}`} />
+      <meta name="og:image:alt" content={pageMetadata?.title || title} />
+      <meta name="twitter:card" content="summary_large_image" />
+    </Helmet>
   );
 };
