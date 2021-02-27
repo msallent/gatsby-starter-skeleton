@@ -33,6 +33,8 @@ export const GlobalStyle = createGlobalStyle`
     background: transparent;
     border: none;
     cursor: pointer;
+    padding: 0;
+    outline: none;
   }
 
   h1,
