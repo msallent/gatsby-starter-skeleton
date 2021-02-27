@@ -39,6 +39,6 @@ export const Paragraph = styled.p`
 `;
 
 export const Link = styled.a`
-  color: #8c4bcc;
+  color: ${({ theme }) => theme.colors.secondary};
   text-decoration: underline;
 `;
