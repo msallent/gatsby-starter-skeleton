@@ -1,13 +1,13 @@
 {
-  "extends": ["config:base"],
-  "timezone": "America/Buenos_Aires",
-  "schedule": "before 10am on Monday",
-  "prHourlyLimit": 0,
+  "extends": ["config:base", "schedule:weekly"],
+  "dependencyDashboard": true,
   "labels": ["dependencies"],
-  "masterIssue": true,
-  "automerge": true,
-  "automergeType": "branch",
-  "major": {
-    "automerge": false
-  }
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["minor", "patch"],
+      "matchCurrentVersion": "!/^0/",
+      "automergeType": "branch",
+      "automerge": true
+    }
+  ]
 }
