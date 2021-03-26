@@ -23,11 +23,7 @@ module.exports = {
     {
       files: ['**/*.ts', '**/*.tsx'],
       parser: '@typescript-eslint/parser',
-      extends: [
-        'plugin:import/typescript',
-        'plugin:@typescript-eslint/recommended',
-        'prettier/@typescript-eslint',
-      ],
+      extends: ['plugin:import/typescript', 'plugin:@typescript-eslint/recommended'],
       rules: {
         'import/extensions': ['error', { ts: 'never', tsx: 'never' }],
         'no-use-before-define': 'off',
