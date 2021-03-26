@@ -19,7 +19,7 @@ For styling, styled-components is used. Everything already set up.
 
 **dependencies**:
 
-    ├── gatsby-image
+    ├── gatsby-plugin-image
     ├── gatsby-plugin-react-helmet
     ├── gatsby-plugin-sharp
     ├── gatsby-plugin-sitemap
