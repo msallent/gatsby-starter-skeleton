@@ -3,13 +3,13 @@
   <br />
   <br />
   <a href="https://gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/Gatsby-Logo.svg" width="350" />
+    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="125" />
   </a>
 </p>
 
 <br />
 
-**Gatsby Skeleton** is an (almost) barebones Gatsby starter that intends to save the user the hassle of having to set up everything every time and start with development right away.
+**Gatsby Skeleton** is an (almost) barebones Gatsby v3 starter that intends to save the user the hassle of having to set up everything every time and start with development right away.
 
 It includes TypeScript (even for the `gatsby-*` files!) along ESLint, Prettier, stylelint, simple-git-hooks and lint-staged.
 
@@ -34,9 +34,10 @@ For styling, styled-components is used. Everything already set up.
 **devDependencies**:
 
     ├── eslint
-    ├── simple-git-hooks
     ├── lint-staged
+    ├── plop
     ├── prettier
+    ├── simple-git-hooks
     ├── stylelint
     └── typescript
 
