@@ -1,6 +1,7 @@
 {
   "extends": ["config:base"],
   "schedule": ["every weekend"],
+  "timezone": "America/Buenos_Aires",
   "dependencyDashboard": true,
   "labels": ["dependencies"],
   "packageRules": [
