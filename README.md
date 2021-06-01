@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="CI Status" src="https://travis-ci.com/msallent/gatsby-starter-skeleton.svg?branch=master" />
+  <img alt="Node.js CI Status" src="https://github.com/msallent/gatsby-starter-skeleton/actions/workflows/node.js.yml/badge.svg" />
   <br />
   <br />
   <a href="https://gatsbyjs.org">
