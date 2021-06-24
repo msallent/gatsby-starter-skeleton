@@ -24,12 +24,12 @@ export const SEO: FunctionComponent<SEOProps> = ({ location, pageMetadata }) => 
       <link rel="icon" type="image/ico" href={Favicon} />
       <meta name="description" content={pageMetadata?.description || description} />
       <meta name="keywords" content={(pageMetadata?.keywords || keywords).join(', ')} />
-      <meta name="og:title" content={pageMetadata?.title || title} />
-      <meta name="og:url" content={`${siteUrl}${location.pathname}`} />
-      <meta name="og:description" content={pageMetadata?.description || description} />
-      <meta name="og:type" content={pageMetadata?.type || 'website'} />
-      <meta name="og:image" content={pageMetadata?.imageUrl || `${siteUrl}${imageUrl}`} />
-      <meta name="og:image:alt" content={pageMetadata?.title || title} />
+      <meta property="og:title" content={pageMetadata?.title || title} />
+      <meta property="og:url" content={`${siteUrl}${location.pathname}`} />
+      <meta property="og:description" content={pageMetadata?.description || description} />
+      <meta property="og:type" content={pageMetadata?.type || 'website'} />
+      <meta property="og:image" content={pageMetadata?.imageUrl || `${siteUrl}${imageUrl}`} />
+      <meta property="og:image:alt" content={pageMetadata?.title || title} />
       <meta name="twitter:card" content="summary_large_image" />
     </Helmet>
   );
