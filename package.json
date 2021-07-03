@@ -19,7 +19,7 @@
     "plop": "plop"
   },
   "dependencies": {
-    "babel-plugin-styled-components": "1.12.0",
+    "babel-plugin-styled-components": "1.13.1",
     "gatsby": "3.8.1",
     "gatsby-plugin-image": "1.8.0",
     "gatsby-plugin-react-helmet": "4.8.0",
