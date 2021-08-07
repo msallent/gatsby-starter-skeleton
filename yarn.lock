@@ -7575,10 +7575,10 @@ gatsby-plugin-svgr@3.0.0-beta.0:
   resolved "https://registry.yarnpkg.com/gatsby-plugin-svgr/-/gatsby-plugin-svgr-3.0.0-beta.0.tgz#7e5315f51dae2663a447899322ea1487cef93dd6"
   integrity sha512-oALTh6VwO6l3khgC/vGr706aqt38EkXwdr6iXVei/auOKGxpCLEuDCQVal1a4SpYXdjHjRsEyab6bxaHL2lzsA==
 
-gatsby-plugin-ts-config@1.1.5:
-  version "1.1.5"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-ts-config/-/gatsby-plugin-ts-config-1.1.5.tgz#7e3f01cafc8313b8f1ce0149e8e3cc64ad30591f"
-  integrity sha512-HSacWVXJ/AToj6JUSasH+y3sZsloJUirOb4wA7Qx7JNqouYz43urHSWtMR7WxRbbvjSVB13Kh2CO3tgfb3TfxQ==
+gatsby-plugin-ts-config@1.1.6:
+  version "1.1.6"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-ts-config/-/gatsby-plugin-ts-config-1.1.6.tgz#7328b8c671833b09235ab2ffd67e3672f0c823e9"
+  integrity sha512-zgyM9skWq7zeMATrih5gY+eeNY25VMJgWlh6S00Dwg07z4BnWhWwb2ka6AvU3qjB31tlPlCnxtJQAWWwS3nTuQ==
   dependencies:
     "@babel/plugin-proposal-nullish-coalescing-operator" "^7.10.1"
     "@babel/plugin-proposal-optional-chaining" "^7.10.3"
