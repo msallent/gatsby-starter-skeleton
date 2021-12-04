@@ -56,7 +56,7 @@
     "gatsby-plugin-ts-config": "1.1.6",
     "lint-staged": "12.1.2",
     "plop": "2.7.6",
-    "prettier": "2.5.0",
+    "prettier": "2.5.1",
     "simple-git-hooks": "2.7.0",
     "stylelint": "14.1.0",
     "stylelint-config-recommended": "6.0.0",
