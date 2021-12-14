@@ -1,6 +1,4 @@
-import { NodePlopAPI } from 'plop';
-
-export default (plop: NodePlopAPI) => {
+module.exports = (plop) => {
   plop.setGenerator('component', {
     description: 'Creates a React Component',
     prompts: [
