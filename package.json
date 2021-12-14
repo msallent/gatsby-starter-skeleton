@@ -55,7 +55,7 @@
     "eslint-plugin-react-hooks": "4.3.0",
     "gatsby-plugin-ts-config": "1.1.6",
     "lint-staged": "12.1.2",
-    "plop": "2.7.6",
+    "plop": "3.0.4",
     "prettier": "2.5.1",
     "simple-git-hooks": "2.7.0",
     "stylelint": "14.1.0",
