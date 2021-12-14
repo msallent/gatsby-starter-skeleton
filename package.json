@@ -2,7 +2,7 @@
   "name": "gatsby-starter-skeleton",
   "license": "MIT",
   "private": true,
-  "version": "3.2.0",
+  "version": "3.3.0",
   "scripts": {
     "build": "gatsby build",
     "clean": "gatsby clean",
@@ -10,6 +10,7 @@
     "lint:js": "eslint --ignore-path .gitignore . --ext js --ext ts --ext tsx",
     "lint:css": "stylelint --ignore-path .gitignore './src/**/*.ts'",
     "lint:prettier": "prettier --ignore-path .gitignore --check .",
+    "prepare": "husky install",
     "serve": "gatsby serve --host 0.0.0.0"
   },
   "dependencies": {
@@ -47,21 +48,14 @@
     "eslint-plugin-prettier": "4.0.0",
     "eslint-plugin-react": "7.27.1",
     "eslint-plugin-react-hooks": "4.3.0",
+    "husky": "7.0.4",
     "lint-staged": "12.1.2",
     "plop": "3.0.4",
     "prettier": "2.5.1",
-    "simple-git-hooks": "2.7.0",
     "stylelint": "14.1.0",
     "stylelint-config-recommended": "6.0.0",
     "stylelint-config-styled-components": "0.1.1",
     "stylelint-processor-styled-components": "1.10.0",
     "typescript": "4.5.3"
-  },
-  "simple-git-hooks": {
-    "pre-commit": "npx tsc && npx lint-staged"
-  },
-  "lint-staged": {
-    "src/**/*.{js,ts,tsx}": "eslint --fix",
-    "src/**/*.ts": "stylelint"
   }
 }
