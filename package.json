@@ -2,21 +2,15 @@
   "name": "gatsby-starter-skeleton",
   "license": "MIT",
   "private": true,
-  "version": "3.0.0",
+  "version": "3.1.0",
   "scripts": {
     "build": "gatsby build",
     "clean": "gatsby clean",
     "dev": "gatsby develop --host 0.0.0.0",
-    "fix": "yarn fix:js && yarn fix:prettier",
-    "fix:js": "yarn lint:js --fix",
-    "fix:prettier": "yarn lint:prettier --write",
-    "lint": "yarn lint:js && yarn lint:css && yarn lint:prettier",
     "lint:js": "eslint --ignore-path .gitignore . --ext js --ext ts --ext tsx",
     "lint:css": "stylelint --ignore-path .gitignore './src/**/*.ts'",
     "lint:prettier": "prettier --ignore-path .gitignore --check .",
-    "serve": "gatsby serve --host 0.0.0.0",
-    "type-check": "tsc",
-    "plop": "plop"
+    "serve": "gatsby serve --host 0.0.0.0"
   },
   "dependencies": {
     "babel-plugin-styled-components": "2.0.2",
@@ -53,7 +47,6 @@
     "eslint-plugin-prettier": "4.0.0",
     "eslint-plugin-react": "7.27.1",
     "eslint-plugin-react-hooks": "4.3.0",
-    "gatsby-plugin-ts-config": "1.1.6",
     "lint-staged": "12.1.2",
     "plop": "3.0.4",
     "prettier": "2.5.1",
