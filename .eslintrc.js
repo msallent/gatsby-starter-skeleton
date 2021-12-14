@@ -13,8 +13,10 @@ module.exports = {
     node: true,
   },
   rules: {
+    'import/extensions': ['error', { js: 'never', ts: 'never', tsx: 'never' }],
     'import/no-extraneous-dependencies': 'off',
     'import/prefer-default-export': 'off',
+    'react/function-component-definition': 'off',
     'react/jsx-filename-extension': ['error', { extensions: ['.jsx', '.tsx'] }],
     'react/jsx-one-expression-per-line': 'off',
     'react/jsx-props-no-spreading': 'off',
@@ -25,7 +27,6 @@ module.exports = {
       parser: '@typescript-eslint/parser',
       extends: ['plugin:import/typescript', 'plugin:@typescript-eslint/recommended'],
       rules: {
-        'import/extensions': ['error', { ts: 'never', tsx: 'never' }],
         'no-use-before-define': 'off',
         'react/prop-types': 'off',
         '@typescript-eslint/explicit-module-boundary-types': 'off',
