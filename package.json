@@ -33,7 +33,7 @@
   "devDependencies": {
     "@svgr/webpack": "6.5.1",
     "@types/node": "16.18.12",
-    "@types/react": "17.0.53",
+    "@types/react": "18.0.28",
     "@types/react-dom": "17.0.19",
     "@types/react-helmet": "6.1.6",
     "@types/styled-components": "5.1.26",
