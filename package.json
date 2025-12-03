@@ -31,7 +31,7 @@
     "styled-components": "5.3.11"
   },
   "devDependencies": {
-    "@svgr/webpack": "6.5.1",
+    "@svgr/webpack": "8.1.0",
     "@types/node": "16.18.126",
     "@types/react": "17.0.90",
     "@types/react-dom": "17.0.26",
